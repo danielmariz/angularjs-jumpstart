@@ -1,0 +1,31 @@
+<!doctype html>
+<html ng-app>
+
+<head>
+    <title>Iterating over data</title>
+</head>
+
+<body data-ng-init="people=[{name: 'John',city:'London'},{name: 'Joe',city:'NYC'},{name: 'Albert',city:'Tokyo'}]">
+
+    <ul>
+        <li data-ng-repeat="person in people">{{ person.name }} {{person.city}}</li>
+    </ul>
+    
+    <br/>
+    
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+        </tr>
+        <tr data-ng-repeat="person in people">
+            <td>{{person.name}}</td>
+            <td>{{person.city}}</td>
+        </tr>
+    </table>
+
+    <script src="..\public\lib\angular.js"></script>
+
+</body>
+
+</html>

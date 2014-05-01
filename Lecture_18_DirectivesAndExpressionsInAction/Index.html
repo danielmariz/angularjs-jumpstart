@@ -1,0 +1,27 @@
+<!doctype html>
+<html data-ng-app="">
+
+<head>
+    <title>Using Directives</title>
+</head>
+
+<body data-ng-init="name='James'">
+    
+    <div data-ng-hide="IsHidden">
+        Name:
+        <input type="text" data-ng-model="name" />
+        {{ name }}
+        
+        <!-- OR -->
+        
+        <span data-ng-bind="name"></span>
+    </div>
+    Hide:
+    <input type="checkbox" data-ng-model="IsHidden"/>
+    <br />
+    <button data-ng-click="name='Michelle'">Change Name</button>
+    <script src="..\public\lib\angular.js"></script>
+
+</body>
+
+</html>
