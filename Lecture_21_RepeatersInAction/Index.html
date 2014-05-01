@@ -18,7 +18,7 @@
             <th>Name</th>
             <th>City</th>
         </tr>
-        <tr data-ng-repeat="person in people">
+        <tr data-ng-repeat="person in people | orderBy: 'name'">
             <td>{{person.name}}</td>
             <td>{{person.city}}</td>
         </tr>
