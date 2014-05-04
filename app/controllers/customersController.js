@@ -1,5 +1,6 @@
 (function () {
 
+    'use strict';
     var CustomersController = function ($scope) {
 
         $scope.sortBy = 'name';
@@ -10,7 +11,7 @@
                 name: 'John',
                 city: 'London',
                 orderTotal: '9.9539',
-                joined: '2009-03-01'
+                joined: '2009-02-07'
             },
             {
                 name: 'Joe',
@@ -22,7 +23,7 @@
                 name: 'Albert',
                 city: 'Tokyo',
                 orderTotal: '5.9539',
-                joined: '2009-03-01'
+                joined: '2009-04-21'
             }
         ];
 
