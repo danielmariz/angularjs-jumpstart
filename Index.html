@@ -8,12 +8,13 @@
 <body data-ng-controller="CustomersController">
 
     <h2>Customers</h2>
-    
-Filter: <input type="text" data-ng-model="customerFilter.name"/>       
-    
+
+    Filter:
+    <input type="text" data-ng-model="customerFilter.name" />
+
     <br/>
     <br/>
-    
+
     <table>
         <tr>
             <th data-ng-click="doSort('name')">Name</th>
@@ -28,14 +29,14 @@ Filter: <input type="text" data-ng-model="customerFilter.name"/>
             <td>{{person.joined | date}}</td>
         </tr>
     </table>
-<br/>
-    
+    <br/>
+
     <span>Total Customers: {{customers.length}}</span>
-    
+
     <script src="..\public\lib\angular.js"></script>
     <script src="app/app.js"></script>
     <script src="app/controllers/customersController.js"></script>
-    
+
 </body>
 
 </html>
