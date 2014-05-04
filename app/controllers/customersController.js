@@ -64,5 +64,5 @@ app.controller('CustomersController', function ($scope) {
     };
     
     angular.module('customersApp')
-        .controller('CustomersController', CustomersController);
+        .controller('CustomersController',['$scope', CustomersController]);
 }());
