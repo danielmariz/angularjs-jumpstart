@@ -12,12 +12,15 @@ Filter:
         <th data-ng-click="doSort('city')">City</th>
         <th data-ng-click="doSort('orderTotal')">Order Total</th>
         <th data-ng-click="doSort('joined')">Joined</th>
+        <th>&nbsp;</th>
     </tr>
     <tr data-ng-repeat="person in customers | filter:customerFilter | orderBy:sortBy:reverse">
         <td>{{person.name | uppercase }}</td>
         <td>{{person.city}}</td>
         <td>{{person.orderTotal | currency}}</td>
         <td>{{person.joined | date}}</td>
+        <td><a href="#/orders/{{ person.id }}">View Orders</a></td>
+            
     </tr>
 </table>
 <br/>
