@@ -63,6 +63,8 @@ app.controller('CustomersController', function ($scope) {
         };
     };
     
+    CustomersController.$inject = ['$scope']
+    
     angular.module('customersApp')
-        .controller('CustomersController',['$scope', CustomersController]);
+        .controller('CustomersController', CustomersController);
 }());
