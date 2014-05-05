@@ -6,7 +6,7 @@ Filter:
 <br/>
 <br/>
 
-<table>
+<table class="table table-striped">
     <tr>
         <th data-ng-click="doSort('name')">Name</th>
         <th data-ng-click="doSort('city')">City</th>
@@ -20,7 +20,7 @@ Filter:
         <td>{{person.orderTotal | currency}}</td>
         <td>{{person.joined | date}}</td>
         <td><a href="#/orders/{{ person.id }}">View Orders</a></td>
-            
+          <td class="center"><span class="glyphicon glyphicon-remove" data-ng-click="deleteCustomer(person.id)"></span></td>  
     </tr>
 </table>
 <br/>
