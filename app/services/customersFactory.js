@@ -1,8 +1,8 @@
 (function () {
     var customersFactory = function ($http) {
-        
 
         var factory = {};
+        
         factory.getCustomers = function () {
             return $http.get('/customers');
         };
